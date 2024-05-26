@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FooterWrapper } from './style'
+import plusIcon from '@/assets/icon/plus.svg';
 import classnames from 'classnames'
 import { 
   isPathPartlyExisted,
@@ -10,6 +11,16 @@ import {
 export default function Footer() {
   const { pathname } = useLocation()
   if (isPath(pathname)) return
+
+
+  const divStyle = {
+    width: '30px',
+    height: '30px',
+    backgroundColor: '#ef3f90',
+    display: 'flex',
+    justifyContent:'center',
+    borderRadius:'8px'
+  };
 
   return (
     <FooterWrapper>
@@ -22,6 +33,10 @@ export default function Footer() {
       <Link to="/dynamic" className={classnames({active:pathname == '/dynamic'})}>
         <i className='iconfont icon-fengche'></i>
         <span>动态</span>
+      </Link>
+      <Link to="/mine" className={classnames({active:pathname == '/mine'})}>
+        <div style={divStyle}><img src={plusIcon}></img></div>
+        
       </Link>
       <Link to="/vip" className={classnames({active:pathname == '/vip'})}>
         <i className='iconfont icon-huiyuan'></i>

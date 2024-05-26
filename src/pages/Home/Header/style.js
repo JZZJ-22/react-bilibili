@@ -19,8 +19,13 @@ export const HeaderWrapper = styled.div`
       border-radius: 50%;
     }
     i {
-      font-size: ${px2rem(20)};
-      color: #000;
+      font-size: ${px2rem(24)};
+      color: 8a8a8a;
+    }
+    i.icon-sousuo {
+      /* 添加特殊样式 */
+      font-size: ${px2rem(18)};
+      color: 8a8a8a;
     }
   }
 `

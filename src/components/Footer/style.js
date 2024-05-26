@@ -22,6 +22,9 @@ export const FooterWrapper = styled.div`
     &.active {
       color: pink;
     }
+    img{
+      background:#ef3f90
+    }
     i {
       font-size: ${px2rem(21)};
     }

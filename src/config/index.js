@@ -1,7 +1,6 @@
 // 头像
 export const avatar =
-  "https://img01.anheyu.com/useruploads/113/2023/03/22/641aefb80e38e.gif";
-
+  'src/assets/icon/avatar.jpg'
 // 搜索为空图片
 export const searchNull =
   "https://img01.anheyu.com/useruploads/113/2023/03/19/6416f016ae5c9.png";
